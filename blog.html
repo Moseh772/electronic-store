@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ElectroHub – Blog</title>
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap" rel="stylesheet"/>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+  <!-- ====== NAVBAR ====== -->
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><i class="fas fa-bolt"></i> ElectroHub</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Products</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="products.html">All Products</a></li>
+              <li><a class="dropdown-item" href="products.html">Laptops</a></li>
+              <li><a class="dropdown-item" href="products.html">Smartphones</a></li>
+              <li><a class="dropdown-item" href="products.html">Audio</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+          <li class="nav-item">
+            <button id="themeToggle" class="btn btn-outline-light ms-2">
+              <i class="fas fa-moon"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ====== BLOG CONTENT ====== -->
+  <main class="container my-5">
+
+    <h1 class="display-5 text-center mb-2"> Our Blog</h1>
+    <p class="text-center text-muted mb-5">Stories, updates, and news from ElectroHub</p>
+
+    <!-- Blog Posts Grid -->
+    <div class="row g-4">
+
+      <!-- ====== BLOG POST 1 ====== -->
+      <div class="col-md-4">
+        <div class="card blog-card h-100">
+          <!-- 👇 REPLACE blog1.jpg WITH YOUR OWN IMAGE -->
+          <img src="images/grand opening.jpg" class="card-img-top" alt="ElectroHub Grand Opening" style="height:220px; object-fit:cover; background:#e9ecef;"/>
+          <div class="card-body">
+            <div class="d-flex justify-content-between text-muted small mb-2">
+              <span><i class="far fa-calendar-alt"></i> 15 Jan 2025</span>
+              <span><i class="far fa-user"></i> By Jane Doe</span>
+            </div>
+            <h5 class="card-title">Our Grand Opening – A New Chapter Begins</h5>
+            <p class="card-text">We officially opened our doors in January 2025! Thank you to everyone who came to celebrate with us. Read about our journey from an idea to a reality.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ====== BLOG POST 2 ====== -->
+      <div class="col-md-4">
+        <div class="card blog-card h-100">
+          <!-- 👇 REPLACE blog2.jpg WITH YOUR OWN IMAGE -->
+          <img src="images/out reach.jpg" class="card-img-top" alt="Community Outreach" style="height:220px; object-fit:cover; background:#e9ecef;"/>
+          <div class="card-body">
+            <div class="d-flex justify-content-between text-muted small mb-2">
+              <span><i class="far fa-calendar-alt"></i> 10 Mar 2025</span>
+              <span><i class="far fa-user"></i> By Emma Wilson</span>
+            </div>
+            <h5 class="card-title">Giving Back – Our Community Initiative</h5>
+            <p class="card-text">We believe in supporting our community. We recently donated 50 laptops to a local school. See how we're making a difference in education.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ====== BLOG POST 3 ====== -->
+      <div class="col-md-4">
+        <div class="card blog-card h-100">
+          <!-- 👇 REPLACE blog3.jpg WITH YOUR OWN IMAGE -->
+          <img src="images/new laptop.jpg" class="card-img-top" alt="New Product Launch" style="height:220px; object-fit:cover; background:#e9ecef;"/>
+          <div class="card-body">
+            <div class="d-flex justify-content-between text-muted small mb-2">
+              <span><i class="far fa-calendar-alt"></i> 20 May 2025</span>
+              <span><i class="far fa-user"></i> By John Smith</span>
+            </div>
+            <h5 class="card-title">Introducing the NovaBook Ultra 15</h5>
+            <p class="card-text">We're proud to launch our most powerful laptop yet. The NovaBook Ultra 15 is designed for professionals who demand the best.</p>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /row -->
+
+    <!-- Footer message -->
+    <div class="text-center mt-5">
+      <p class="text-muted">Stay tuned for more updates from ElectroHub!</p>
+    </div>
+
+  </main>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="py-4 mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5><i class="fas fa-bolt"></i> ElectroHub</h5>
+          <p>Your trusted electronics partner since 2020.</p>
+        </div>
+        <div class="col-md-4">
+          <h6>Quick Links</h6>
+          <ul class="list-unstyled">
+            <li><a href="about.html">About</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h6>Follow Us</h6>
+          <a href="#" class="text-light me-2"><i class="fab fa-facebook fa-lg"></i></a>
+          <a href="#" class="text-light me-2"><i class="fab fa-twitter fa-lg"></i></a>
+          <a href="#" class="text-light"><i class="fab fa-instagram fa-lg"></i></a>
+        </div>
+      </div>
+      <hr/>
+      <p class="text-center mb-0">&copy; 2026 ElectroHub. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
